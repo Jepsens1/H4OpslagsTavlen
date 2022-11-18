@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     /***
      * Returns a new OnTouchListener
+     * And adds code to move image around
      *
      * @return
      */
@@ -166,6 +167,10 @@ public class MainActivity extends AppCompatActivity {
         mViewLayout.removeAllViews();
     }
 
+    /***
+     * Converts the latest image that was uploaded to base64
+     * Post to Api with base 64 string
+     */
     private void SaveImageToApi()
     {
         ImageView view = latestImage;
